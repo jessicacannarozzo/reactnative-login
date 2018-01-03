@@ -25,12 +25,13 @@ const styles = StyleSheet.create({
 //Firebase:
 
 
-//Other Functions
+//Other Functions:
 
 //assigns background a random color
-//return: rgb string. r,g,b are all between 0 and 255
+//return: rgb string. g,b are all between 0 and 255.
+//r is between 125,255 to avoid text being hidden via dark backgrounds
 function spiceBackgroundColor() {
-  return "rgb("+randomInt(0,255)+","+randomInt(0,255)+","+randomInt(0,255)+")";
+  return "rgb("+randomInt(125,255)+","+randomInt(0,255)+","+randomInt(0,255)+")";
 }
 
 //returns random value between min and max
